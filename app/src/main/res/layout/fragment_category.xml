@@ -1,0 +1,109 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.duaa.sportier.Fragment.CategoryFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:gravity="center"
+        android:weightSum="5">
+
+        <com.example.duaa.sportier.view.FontTextViewRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/men"
+            android:layout_weight="1"
+            android:background="@drawable/background_button_selected"
+            android:gravity="center"
+            android:text="@string/men"
+            android:textSize="11sp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textStyle="bold"
+
+
+            />
+
+        <com.example.duaa.sportier.view.FontTextViewRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/women"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/women"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+
+            />
+
+        <com.example.duaa.sportier.view.FontTextViewRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/kids"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/kids"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+
+
+            />
+
+        <com.example.duaa.sportier.view.FontTextViewRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sports"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/sports"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+
+            />
+
+        <com.example.duaa.sportier.view.FontTextViewRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/personalADS"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/personalADS"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:background="@mipmap/line4">
+
+
+    </View>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/categoryContainer"
+        android:layout_gravity="center"
+        >
+
+    </FrameLayout>
+
+</LinearLayout>

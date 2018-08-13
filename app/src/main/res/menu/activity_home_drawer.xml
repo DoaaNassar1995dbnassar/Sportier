@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@mipmap/side_menu_home"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/myAccount"
+            android:icon="@mipmap/side_menu_my_account"
+            android:title="@string/myAccountMenu" />
+        <item
+            android:id="@+id/packages"
+            android:icon="@mipmap/side_menu_packages"
+            android:title="@string/packages" />
+        <item
+            android:id="@+id/notifications"
+            android:icon="@mipmap/side_menu_noti"
+            android:title="@string/notification" />
+    </group>
+    <item android:title="@null">
+        <menu>
+            <item
+                android:id="@+id/about"
+                android:icon="@mipmap/side_menu_about"
+                android:title="@string/aboutUs" />
+            <item
+                android:id="@+id/contact"
+                android:icon="@mipmap/side_menu_contact"
+                android:title="@string/contactUs" />
+        </menu>
+    </item>
+    <!--<i>&ndash;&gt;-->
+    <!--</item>-->
+    <item android:title="@null">
+        <menu>
+            <item
+                android:id="@+id/FAQ"
+                android:icon="@mipmap/side_menu_faq"
+                android:title="@string/FAQ" />
+            <item
+                android:id="@+id/terms"
+                android:icon="@mipmap/side_menu_terms"
+                android:title="@string/terms" />
+        </menu>
+    </item>
+
+    <item android:title="@null">
+        <menu>
+            <item
+                android:id="@+id/changeCountry"
+                android:icon="@mipmap/side_menu_kuwait"
+                android:title="@string/changeCountry" />
+            <item
+                android:id="@+id/language"
+                android:icon="@mipmap/side_menu_lang"
+                android:title="@string/language" />
+        </menu>
+    </item>
+</menu>

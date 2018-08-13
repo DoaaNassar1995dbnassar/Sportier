@@ -1,0 +1,47 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="RtlCompat"
+    tools:context="com.example.duaa.sportier.Fragment.MyAddressesFragment"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/btn01_red"
+        android:orientation="vertical"
+        android:layout_margin="15dp"
+        android:id="@+id/addAddress"
+
+
+        >
+
+
+    <com.example.duaa.sportier.view.FontTextViewRegular
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:id="@+id/register"
+        android:text="@string/addNewAddress"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:drawablePadding="10dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:drawableStart="@drawable/ic_add_black_24dp"
+       />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/myAddressList"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+
+        >
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

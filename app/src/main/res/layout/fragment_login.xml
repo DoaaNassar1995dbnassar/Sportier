@@ -1,0 +1,123 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_marginTop="100dp"
+
+    tools:context="com.example.duaa.sportier.Fragment.LoginFragment"
+    tools:ignore="RtlCompat">
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@mipmap/input"
+
+        >
+
+        <com.example.duaa.sportier.view.FontTextViewRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:text="+965"
+            android:textColor="@color/red"
+            android:textSize="15sp" />
+
+        <com.example.duaa.sportier.view.FontTextViewRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:text="|"
+            android:textSize="18sp"
+
+            />
+
+        <com.example.duaa.sportier.view.FontEditTextViewRegular
+            android:id="@+id/mobileNumber"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:background="@mipmap/input"
+            android:hint="@string/mobile"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textSize="15sp"
+
+            />
+
+    </LinearLayout>
+
+
+    <com.example.duaa.sportier.view.FontEditTextViewRegular
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@mipmap/input"
+        android:hint="@string/password"
+        android:paddingStart="25dp"
+        android:textSize="15sp"
+        android:inputType="textPassword"
+        android:paddingEnd="10dp"
+
+
+        />
+
+    <com.example.duaa.sportier.view.FontTextViewRegular
+        android:id="@+id/forgetPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:text="@string/ForgetPassword"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <com.example.duaa.sportier.view.FontButtonRegular
+        android:id="@+id/loginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_margin="25dp"
+        android:background="@mipmap/btn01_red"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+
+        />
+
+
+    <com.example.duaa.sportier.view.FontTextViewRegular
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:text="@string/newAccont"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <com.example.duaa.sportier.view.FontTextViewRegular
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/register"
+        android:textColor="@color/red"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:orientation="vertical"
+    tools:context="com.example.duaa.sportier.Fragment.ShoppingCartFragment">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:id="@+id/shoppingList"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.example.duaa.sportier.view.FontTextViewRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/total"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+
+
+            />
+
+        <com.example.duaa.sportier.view.FontTextViewRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/price"
+            android:layout_margin="10dp"
+            android:inputType="number"
+            android:text="1160.000"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+
+
+            />
+
+    </LinearLayout>
+
+
+    <com.example.duaa.sportier.view.FontButtonRegular
+        android:id="@+id/checkout"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_margin="10dp"
+        android:background="@mipmap/btn01_red"
+        android:text="@string/checkout"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+
+        />
+
+    <com.example.duaa.sportier.view.FontTextViewRegular
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/continueShopping"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="@string/continueShopping"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+
+
+        />
+
+    <com.example.duaa.sportier.view.FontTextViewRegular
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/commercialADS"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:background="@mipmap/qty_input"
+        android:gravity="center"
+        android:text="@string/commercialADS"
+        android:textSize="14sp"
+
+        />
+</LinearLayout>

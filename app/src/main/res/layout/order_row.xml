@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    tools:ignore="RtlCompat"
+    android:background="@mipmap/top_bar_bg"
+
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <com.example.duaa.sportier.view.FontTextViewRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/name"
+            android:textColor="@color/black"
+            android:text="@string/register"
+            android:textStyle="bold"
+            android:textSize="13sp"
+            />
+
+        <com.example.duaa.sportier.view.FontTextViewRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/created"
+            android:text="12/12"
+            android:textSize="12sp"
+
+
+            />
+        <com.example.duaa.sportier.view.FontTextViewRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/price"
+            android:text="price"
+            android:textSize="12sp"
+            
+
+            />
+    </LinearLayout>
+
+    <com.example.duaa.sportier.view.FontTextViewRegular
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center|end"
+        android:paddingEnd="10dp"
+        android:text="fgdfglk"
+        android:id="@+id/type"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:textAllCaps="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/indecator2"
+        android:layout_gravity="center"
+        />
+</LinearLayout>

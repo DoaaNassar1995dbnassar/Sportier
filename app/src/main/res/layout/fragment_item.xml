@@ -1,0 +1,365 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.example.duaa.sportier.Fragment.ItemFragment"
+    tools:ignore="RtlCompat">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            tools:ignore="RtlCompat">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@mipmap/shadow2"
+
+                    >
+
+
+                    <com.daimajia.slider.library.SliderLayout
+                        android:id="@+id/slider"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        custom:auto_cycle="true"
+                        custom:indicator_visibility="visible"
+                        custom:pager_animation="Accordion"
+                        custom:pager_animation_span="1100" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="15dp">
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@mipmap/share"
+
+                            />
+
+                        <com.daimajia.slider.library.Indicators.PagerIndicator
+                            android:id="@+id/custom_indicator"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="16dp"
+
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            custom:selected_color="@color/colorPrimary"
+                            custom:selected_height="6dp"
+                            custom:selected_padding_left="5dp"
+                            custom:selected_padding_right="5dp"
+                            custom:selected_width="6dp"
+                            custom:shape="oval"
+                            custom:unselected_color="@color/white"
+                            custom:unselected_height="6dp"
+                            custom:unselected_padding_left="5dp"
+                            custom:unselected_padding_right="5dp"
+                            custom:unselected_width="6dp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageButton
+                                android:id="@+id/fav"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="20dp"
+                                android:background="@mipmap/faved2" />
+
+                            <com.example.duaa.sportier.view.FontTextViewRegular
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="VIEWS"
+                                android:textSize="10sp"
+                                android:textColor="@color/white" />
+
+                            <com.example.duaa.sportier.view.FontTextViewRegular
+                                android:id="@+id/numberView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="7dp"
+                                android:text="200"
+                                android:textColor="@color/white"
+
+                                />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/co_no_img"
+
+                    />
+
+                <com.example.duaa.sportier.view.FontTextViewRegular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:textSize="11sp"
+                    android:text="SHOP NAME" />
+
+                <ImageView
+                    android:id="@+id/indicator"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:src="@mipmap/indecator" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@mipmap/line4" />
+
+            <com.example.duaa.sportier.view.FontTextViewRegular
+                android:id="@+id/productName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:paddingStart="10dp"
+                android:text="Product Name"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+
+            <RatingBar
+                android:id="@+id/star"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                style="?android:attr/ratingBarStyleSmall"
+                android:theme="@style/Theme.Rating"
+                android:rating="4"
+                android:isIndicator="true"
+                android:numStars="5" />
+
+            <com.example.duaa.sportier.view.FontTextViewRegular
+                android:id="@+id/smallDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="small description about product will be here"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/minus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+
+                    android:src="@mipmap/qty_minus" />
+
+                <com.example.duaa.sportier.view.FontTextViewRegular
+                    android:id="@+id/input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@mipmap/qty_input"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:id="@+id/plus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+
+                    android:src="@mipmap/qty_plus" />
+
+                <com.example.duaa.sportier.view.FontTextViewRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="25dp"
+                    android:text="KD  5.000"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+
+                    custom:fontFamily="andada" />
+            </LinearLayout>
+
+
+            <com.example.duaa.sportier.view.FontTextViewRegular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Select Size"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:paddingStart="10dp"
+                >
+
+                <com.example.duaa.sportier.view.FontTextViewRegular
+                    android:id="@+id/small"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@mipmap/prod_box"
+                    android:gravity="center"
+                    android:text="S"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+
+                    />
+
+                <com.example.duaa.sportier.view.FontTextViewRegular
+                    android:id="@+id/medium"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@mipmap/prod_box"
+                    android:gravity="center"
+                    android:text="M"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+
+                    />
+
+                <com.example.duaa.sportier.view.FontTextViewRegular
+                    android:id="@+id/large"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/border"
+                    android:gravity="center"
+                    android:text="L"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+
+                    />
+
+                <com.example.duaa.sportier.view.FontTextViewRegular
+                    android:id="@+id/XLarge"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@mipmap/prod_box"
+                    android:gravity="center"
+                    android:text="XL"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+
+                    />
+
+            </LinearLayout>
+
+            <com.example.duaa.sportier.view.FontTextViewRegular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="20dp"
+                android:text="Select Color"
+                android:textSize="14sp" />
+
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="10dp"
+                >
+
+            </android.support.v7.widget.RecyclerView>
+
+
+            <com.example.duaa.sportier.view.FontTextViewRegular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="20dp"
+                android:text="Large ipsum dolor sit amet , consecruer adipi-scing eit .Aenean"
+                android:textSize="14sp" />
+
+            <com.example.duaa.sportier.view.FontTextViewRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="YOU MAY LIKE THIS"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+
+                />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/mayByLike"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <com.example.duaa.sportier.view.FontButtonRegular
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_margin="10dp"
+                android:background="@mipmap/btn01_red"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:text="ADD TO CART"
+                android:id="@+id/addToCart"
+
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

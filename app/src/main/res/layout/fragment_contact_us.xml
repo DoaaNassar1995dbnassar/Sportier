@@ -1,0 +1,90 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.duaa.sportier.Fragment.ContactUsFragment"
+    tools:ignore="RtlCompat">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:src="@mipmap/call"
+
+            />
+
+        <com.example.duaa.sportier.view.FontTextViewRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="45dp"
+            android:layout_marginTop="10dp"
+            android:text="+965 9999XXX"
+            android:textSize="15sp" />
+
+        <com.example.duaa.sportier.view.FontEditTextViewRegular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@mipmap/input"
+
+            android:hint="@string/name"
+            android:padding="8dp"
+            android:textSize="15sp"
+
+
+            />
+
+        <com.example.duaa.sportier.view.FontEditTextViewRegular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:background="@mipmap/input"
+            android:hint="@string/email"
+            android:padding="8dp"
+            android:textSize="15sp"
+
+            />
+
+        <com.example.duaa.sportier.view.FontEditTextViewRegular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@mipmap/input"
+            android:hint="@string/mobile"
+            android:padding="8dp"
+            android:textSize="15sp"
+
+            />
+
+        <com.example.duaa.sportier.view.FontEditTextViewRegular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:background="@mipmap/input"
+            android:hint="@string/comment"
+            android:paddingBottom="60dp"
+            android:paddingStart="8dp"
+            android:paddingTop="8dp"
+            android:textSize="15sp"
+
+            />
+
+        <com.example.duaa.sportier.view.FontButtonRegular
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_margin="10dp"
+            android:background="@mipmap/btn01_red"
+            android:text="@string/send"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</ScrollView>

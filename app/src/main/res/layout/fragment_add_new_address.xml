@@ -1,0 +1,215 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20dp"
+    tools:context="com.example.duaa.sportier.Fragment.AddNewAddressFragment"
+    tools:ignore="RtlCompat">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="ScrollViewSize">
+
+
+        <com.example.duaa.sportier.view.FontEditTextViewRegular
+            android:id="@+id/addressName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:background="@mipmap/input"
+            android:hint="@string/addressName"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:textSize="15sp"
+
+            />
+
+        <LinearLayout
+            android:id="@+id/governate"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:background="@mipmap/input"
+            android:gravity="center">
+
+            <com.example.duaa.sportier.view.FontTextViewRegular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/governate"
+                android:paddingStart="10dp"
+
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="5dp"
+                android:paddingEnd="10dp"
+                android:rotation="90"
+                android:src="@mipmap/indecator2"
+
+
+                />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/city"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:background="@mipmap/input"
+            android:gravity="center">
+
+            <com.example.duaa.sportier.view.FontTextViewRegular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/City"
+                android:paddingStart="10dp"
+
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="5dp"
+                android:paddingEnd="10dp"
+                android:rotation="90"
+                android:src="@mipmap/indecator2"
+
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/area"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:background="@mipmap/input"
+            android:gravity="center">
+
+            <com.example.duaa.sportier.view.FontTextViewRegular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/Area"
+                android:paddingStart="10dp"
+
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="5dp"
+                android:paddingEnd="10dp"
+                android:rotation="90"
+                android:src="@mipmap/indecator2" />
+
+
+        </LinearLayout>
+
+        <com.example.duaa.sportier.view.FontEditTextViewRegular
+            android:id="@+id/street"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:background="@mipmap/input"
+            android:hint="@string/street"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:textSize="15sp"
+
+            />
+
+
+        <com.example.duaa.sportier.view.FontEditTextViewRegular
+            android:id="@+id/jada_avenue"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:background="@mipmap/input"
+            android:hint="@string/jade"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:textSize="15sp"
+
+            />
+
+        <com.example.duaa.sportier.view.FontEditTextViewRegular
+            android:id="@+id/houseBuilding"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:background="@mipmap/input"
+            android:hint="@string/house"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:textSize="15sp"
+
+            />
+
+
+        <com.example.duaa.sportier.view.FontEditTextViewRegular
+            android:id="@+id/addressDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:background="@mipmap/input"
+            android:hint="@string/addressDetails"
+            android:paddingBottom="60dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:textSize="15sp"
+
+
+            />
+
+
+        <com.example.duaa.sportier.view.FontButtonRegular
+            android:id="@+id/loginBtn"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:background="@mipmap/btn01_red"
+            android:text="@string/addNewAddress"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:layout_marginBottom="15dp"
+
+            />
+
+
+    </LinearLayout>
+
+</ScrollView>
